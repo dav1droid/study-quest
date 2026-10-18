@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --pixel-font: 'Press Start 2P', monospace;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--pixel-font);
+  background: #0b1020;
+  color: white;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: none;
+}
+
+button, input {
+  font-family: inherit;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.card {
+  width: 380px;
+  max-width: 92vw;
+  background: rgba(0, 0, 0, 0.35);
+  border: 2px solid rgba(255, 255, 255, 0.06);
+  padding: 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+}
+
+.big-btn {
+  display: block;
+  width: 100%;
+  background: linear-gradient(180deg, #6be281, #4cc967);
+  color: #042b12;
+  padding: 0.9rem;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-top: 0.6rem;
+  cursor: pointer;
+  user-select: none;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+}
+
+.small-btn {
+  display: block;
+  width: 100%;
+  background: linear-gradient(180deg, #9fd0ff, #72aaff);
+  color: #02102a;
+  padding: 0.6rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+}
+
+.stat {
+  font-size: 11px;
+  color: #cfe8d3;
+}
+
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 12px);
+  grid-auto-rows: 12px;
+  gap: 1px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.pixel {
+  width: 12px;
+  height: 12px;
+}
+
+.bg-forest { background: linear-gradient(#0b2a1b, #06331f); }
+.bg-neotown { background: linear-gradient(#04112b, #1b0033); }
+.bg-castle { background: linear-gradient(#1d2130, #0d0f18); }
